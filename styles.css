@@ -1,0 +1,150 @@
+
+
+.tweet-container {
+    position: relative;
+}
+
+.delete-button {
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     margin: 5px;
+     background-color: #dc3545;
+     color: #fff;
+     border: none;
+     padding: 5px 10px;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+.tweet-container {
+     display: flex;
+     align-items: flex-start;
+     border-bottom: 1px solid #e1e8ed; /* 各ツイートの下にボーダーラインを追加 */
+     padding-bottom: 15px; /* ツイート間のスペースを追加 */
+ }
+
+.username {
+    font-weight: bold; /* ユーザー名を太字にします */
+    margin-right: 10px; /* ユーザー名の後ろに適切な間隔を確保します */
+}
+
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+label[for="tweet_text"],
+textarea {
+    margin-bottom: 10px; /* 適切なマージンを設定してプロフィール画像と Tweet Text の間隔を調整 */
+}
+
+.profile-image {
+    width: 50px; /* プロフィール画像の幅を調整します */
+    height: 50px; /* プロフィール画像の高さを調整します */
+    border-radius: 50%; /* 円形のプロフィール画像にします */
+    margin-right: 10px; /* プロフィール画像とユーザー名の間に適切な間隔を確保します */
+}
+
+
+.tweet-content {
+    flex: 1;
+}
+
+.tweet-text {
+    color: #14171a;
+}
+
+.tweet-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.timestamp {
+    color: #66757f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* 既存のスタイル */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f8fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #1da1f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #1da1f2;
+    font-weight: bold;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #dfe3e8;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #1da1f2;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0c7dbd;
+}
+
+div {
+    margin-top: 20px;
+    border-top: 1px solid #e1e8ed;
+    padding-top: 10px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+p {
+    color: #66757f;
+    margin: 5px 0;
+}
